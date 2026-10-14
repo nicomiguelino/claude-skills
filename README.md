@@ -42,3 +42,11 @@ git commit -m "chore(claude): update skills submodule"
 ```
 
 Because of `ignore = all`, `git status` won't show the new submodule commit. Use `git add .claude/skills` explicitly.
+
+## Skills missing after pulling
+
+If a repo used to track `.claude/skills` as plain files, pulling the commit that replaces them with the submodule can delete the submodule's files from the working tree. `git submodule update --init` does nothing in that case.
+
+```sh
+git -C .claude/skills restore .
+```
