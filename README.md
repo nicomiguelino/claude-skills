@@ -1,5 +1,8 @@
 # claude-skills
 
+> [!WARNING]
+> **Deprecated.** Development continues in [nicomiguelino/claude-plugin](https://github.com/nicomiguelino/claude-plugin), a Claude Code plugin that replaces this submodule. This repo is archived and will no longer be updated.
+
 Personal Claude Code skills.
 
 - `commit`: create a conventional commit
